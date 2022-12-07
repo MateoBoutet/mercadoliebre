@@ -1,0 +1,17 @@
+.center i{
+    color: #03264C;
+    font-size: 2em;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.center p{
+    text-align: center;
+    line-height: 35px;
+}
+
+.center h2{
+    text-align: center;
+    line-height: 40px;
+}

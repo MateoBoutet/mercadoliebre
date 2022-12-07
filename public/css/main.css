@@ -1,0 +1,113 @@
+@import url("normalize.css");
+main{
+    background-color: #ebebeb;
+}
+
+.main{
+    width: 90%;
+    margin: auto;
+}
+ 
+.ofertas, .ultima-vista{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.titulares{
+    font-size: 24px;
+    width: 100%;
+    margin: 1rem 
+}
+
+.precios-descuentos{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.precios{
+    font-size: 1.2rem;
+    line-height: 26px;
+}
+
+.descuentos{
+    color: green;
+}
+
+.descripciones{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.producto{
+    height: 50%;
+    border-bottom: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.imagenes{
+    width: 100%;
+    height: 10%;
+}
+
+.articulo{
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.articulo i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;    
+    right: 20px;
+    top: -15px;
+    color: #39b54a
+}
+
+/* ========= Movil ========== */
+
+@media (max-width: 361px){
+    .descripciones{
+        display: none;
+    }
+}
+
+/* =========== Tablet =========== */
+
+@media (min-width: 361px){
+    .producto{
+        width: 45%;
+    }
+
+    .producto:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        cursor: pointer;
+    }
+
+    
+
+    .ofertas, .ultima-vista{
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 761px){
+    .producto{
+        width: 22%;
+    }
+}
+
+
+
+

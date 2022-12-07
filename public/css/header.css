@@ -1,0 +1,122 @@
+header{
+    background-color: #EAC926;
+}
+
+.logo{
+    width: 200px;
+    height: 30%;
+}
+
+.fa-magnifying-glass{
+    padding: 5px;
+    background-color: white;
+}
+
+.compra{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu{
+    color: white;
+    display: flex;
+    Justify-content: center;
+    margin: 15px;
+}
+
+.burger-menu i{
+   background-color: #03264C;;
+   padding: 12px;
+   border-radius: 7px;
+}
+
+.banner{
+   width: 100vw;
+}
+
+ @media (max-width: 361px){
+    .izq-der {
+     display: none;
+    }
+} 
+
+
+@media (min-width: 361px){
+    .burger-menu{
+        display: none;
+    }
+
+    .header-tablet{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barra{
+        max-width: 25%;
+        max-height: 25px;
+    }
+
+    .fa-magnifying-glass{
+        padding-left: 0px;
+    }
+
+    .compra{
+        max-width: 25%;
+        font-size: small;
+    }
+
+    .izq-der{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .izq-der ul{
+        display: flex;
+    }
+
+    .izq-der li{
+        margin: 0px 5px;
+    }
+
+/*     .izq{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .der{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    li{
+        display: flex;
+        padding-left: 40px;
+        margin-right: 20px;
+    } */
+}
+
+@media (min-width: 761px){
+    .header-tablet, .izq-der{
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+    }
+
+    .izq-der{
+        margin-top: 40px 
+    }
+
+    .izq-der li{
+        margin: 0px 10px;
+    }
+
+    .izq-der a{
+        font-size: 19px;
+    }
+}

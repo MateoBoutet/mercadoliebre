@@ -1,0 +1,23 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+p, li{
+    font-size: 12px
+}
+
+li{
+    list-style: none;
+}
+
+.cuerposDeTexto{
+    font-size: 12px;
+    line-height: 20px;
+}
+

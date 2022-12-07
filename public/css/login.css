@@ -1,0 +1,60 @@
+@import url("normalize.css");
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nombres{
+    display: block;
+    margin-bottom: 2rem;
+    padding-left: 0.75rem;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.login{
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.nombres input{
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 0;
+    border: none;
+}
+
+.boton-entrar button{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #03264C;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.boton-entrar:hover button{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+
+input{
+    display: block;
+}
+
+@media (min-width: 361px){
+
+}
+
+
+@media (min-width: 761px){
+}
