@@ -32,6 +32,7 @@
     height: 100%;
     padding: 0.75rem 0;
     border: none;
+    outline: none;
 }
 
 .boton-entrar button{
@@ -45,6 +46,10 @@
 .boton-entrar:hover button{
     background-color: #0022AA;
     cursor: pointer;
+}
+
+button{
+    border-style: none; 
 }
 
 input{

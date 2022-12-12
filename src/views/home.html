@@ -15,15 +15,19 @@
 </head>
 <body>
     <header>
+        <section class = "header-top">
         <section class = "header-tablet">
-                <img class = "logo" src="/img/logo-mercado-liebre.svg" alt="logo">
-                <div class = "barra">
-                    <input type="text" placeholder="Buscar productos, marcas">
+                <img class = "logo" src="/img/logo-mercado-liebre.svg" alt="logo" style="cursor: pointer; max-width: 250px;">
+                <div class = "buscar">  
+                    <input type="text" placeholder="Buscar productos, marcas" min = "8" class = "buscar-texto">
+                    <a href="" class = "boton">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    </div> 
+                    </a>
+                </div>           
             <h2 class = "compra"> <i class="fa-solid fa-hand-holding-dollar"></i>
                 Comprá en cuotas y sin tarjeta de crédito
             </h2>
+        </section>
         </section>
        <section class = izq-der>
         <ul class = "izq">
@@ -147,11 +151,13 @@
     </main>
 
     <footer>
+        <div class = "footer">
         <section class = "center">
             <i class="fa-solid fa-credit-card"></i>
             <h2>Pagá con tarjeta o en efectivo</h2>
             <p class = "cuerpoDeTexto">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en <br>
                 puntos de pago. ¡Y siempre es seguro!</p>
+        </section>
         </section>
         <section class = "center">
             <i class="fa-solid fa-gift"></i>
@@ -165,9 +171,20 @@
             <p class = "cuerpoDeTexto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, <br>
                 porque estás siempre protegid@.</p>
         </section>
+        </div>
         <section>
-            <p class = "cuerpoDeTexto">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            <p class = "cuerpoDeTexto, copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
+    <script>
+        const webLogo = document.querySelector('.logo')
+        webLogo.addEventListener('click', () => {
+                if(window){
+                    window.location.href = '/'
+                }else{  
+                    alert('Ocurrio un error al redirigir.')
+                }
+        })
+    </script>
 </body>
 </html>

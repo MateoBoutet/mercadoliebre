@@ -16,7 +16,7 @@
 <body>
     <header>
         <section class = "header-tablet">
-                <img class = "logo" src="/img/logo-mercado-liebre.svg" alt="logo">
+                <img class = "logo" src="/img/logo-mercado-liebre.svg" alt="logo" style="cursor: pointer;">
                 <div class = "barra">
                 <input type="text" placeholder="Buscar productos, marcas">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -35,7 +35,7 @@
 
         <ul class = "der">
             <li><a href = "crea-tu-cuenta">Crea tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-            <li><a href = "ingesa">Ingresa</a> <i class="fa-solid fa-right-to-bracket"></i></li>
+            <li><a href = "ingresa">Ingresa</a> <i class="fa-solid fa-right-to-bracket"></i></li>
             <li><a href = "#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
         </ul>
        </section>
@@ -130,6 +130,7 @@
     </main>
 
     <footer>
+        <div class = "footer">
         <section class = "center">
             <i class="fa-solid fa-credit-card"></i>
             <h2>Pagá con tarjeta o en efectivo</h2>
@@ -148,9 +149,20 @@
             <p class = "cuerpoDeTexto">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, <br>
                 porque estás siempre protegid@.</p>
         </section>
+        </div>
         <section>
-            <p class = "cuerpoDeTexto">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            <p class = "cuerpoDeTexto, copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
         </section>
     </footer>
+    <script>
+        const webLogo = document.querySelector('.logo')
+        webLogo.addEventListener('click', () => {
+                if(window){
+                    window.location.href = '/'
+                }else{  
+                    alert('Ocurrio un error al redirigir.')
+                }
+        })
+    </script>
 </body>
 </html>

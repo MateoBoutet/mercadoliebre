@@ -1,9 +1,24 @@
-.center i{
-    color: #03264C;
-    font-size: 2em;
-    line-height: 35px;
+.footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center{
+    padding: 32px 48px;
+    text-align: center;
+    max-width: 480px;
+}
+
+
+.center i{
+    font-size: 2rem;
+    color: #03264C;
+    padding-bottom: 4px;
+}
+
+.center i:hover{
+    color: #0022AA;
 }
 
 .center p{
@@ -14,4 +29,17 @@
 .center h2{
     text-align: center;
     line-height: 40px;
+}
+
+.copyright{
+    font-size: 12px;
+    text-decoration: none;
+    padding: 16px 16px;
+}
+
+@media (min-width: 761px){
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

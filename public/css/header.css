@@ -2,18 +2,54 @@ header{
     background-color: #EAC926;
 }
 
-.logo{
-    width: 200px;
-    height: 30%;
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 32px 0;
 }
 
-.fa-magnifying-glass{
-    padding: 5px;
-    background-color: white;
+.logo{
+    width: 45%;
+    height: 30%;
+    display: inline;
+    position: relative;
 }
+
+.buscar{
+    width: 45%;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.buscar-texto{
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+}
+
+.boton{
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+    font-size: 19px;
+    display: inline;
+    position: absolute;
+    right: -20px;
+}
+
+
 
 .compra{
     text-align: center;
+    padding-top: 35px;
 }
 
 a{
@@ -55,13 +91,12 @@ a{
         justify-content: space-between;
     }
 
-    .barra{
-        max-width: 25%;
-        max-height: 25px;
+    .logo{
+        width: 30%
     }
 
-    .fa-magnifying-glass{
-        padding-left: 0px;
+    .buscar{
+        width: 22%
     }
 
     .compra{
@@ -81,6 +116,7 @@ a{
     .izq-der li{
         margin: 0px 5px;
     }
+
 
 /*     .izq{
         display: flex;
