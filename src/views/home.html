@@ -15,39 +15,64 @@
 </head>
 <body>
     <header>
-        <section class = "header-top">
         <section class = "header-tablet">
+            <!-- *******************Logo******************** -->
                 <img class = "logo" src="/img/logo-mercado-liebre.svg" alt="logo" style="cursor: pointer; max-width: 250px;">
-                <div class = "buscar">  
-                    <input type="text" placeholder="Buscar productos, marcas" min = "8" class = "buscar-texto">
-                    <a href="" class = "boton">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>           
-            <h2 class = "compra"> <i class="fa-solid fa-hand-holding-dollar"></i>
-                Comprá en cuotas y sin tarjeta de crédito
-            </h2>
+                <!-- ********************* Barra de busqueda **************** -->
+                <section class="barra-busqueda">
+                    <form action="/buscar" method="POST">
+                        <div class="campo-busqueda">
+                            <input type="text" placeholder="Buscá productos, marcas y más" required>
+                        </div>
+    
+                        <div class="lupa">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </section> 
+                <section class = "compra">
+                    <div><i class="fa-solid fa-hand-holding-dollar"></i></div>  
+                    <p > 
+                        Comprá en cuotas y sin tarjeta de crédito
+                    </p>
+                </section>
         </section>
-        </section>
-       <section class = izq-der>
-        <ul class = "izq">
-            <li><a href = "#">Ofertas</a></li>
-            <li><a href = "#">Tiendas oficiales</a></li>
-            <li><a href = "#">Vender</a></li>
-            <li><a href = "#">Ayuda</a></li> 
+        <!-- *******************Nav***************** -->
+       <nav>
+        <ul class="nav-izq-der">
+            <li>
+                <a href="#">Ofertas</a>
+            </li>
+            <li>
+                <a href="#">Tiendas Oficiales</a>
+            </li>
+            <li>
+                <a href="#">Vender</a>
+            </li>
+            <li>
+                <a href="#">Ayuda</a>
+            </li>
         </ul>
-
-        <ul class = "der">
-            <li><a href = "crea-tu-cuenta">Crea tu cuenta</a> <i class="fa-regular fa-id-card"></i></li>
-            <li><a href = "ingresa">Ingresa</a> <i class="fa-solid fa-right-to-bracket"></i></li>
-            <li><a href = "#">Mis compras</a> <i class="fa-solid fa-basket-shopping"></i></li>
+        <ul class="nav-izq-der">
+            <li>
+                <a href="crea-tu-cuenta">Creá tu cuenta</a>
+                <i class="far fa-id-card"></i>
+            </li>
+            <li>
+                <a href="ingresa">Ingresá</a>
+                <i class="fas fa-sign-in-alt"></i>
+            </li>
+            <li>
+                <a href="#">Mis compras</a>
+                <i class="fas fa-shopping-basket"></i>
+            </li>
         </ul>
-       </section>
-
+    </nav>
+    <!-- *******************Burguer menu***************** -->
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
             </div>
-
+            <!-- ****************Banner******************* -->
         <img class = "banner" src="/img/img-home-banner.jpg" alt = "banner">
     </header>
 

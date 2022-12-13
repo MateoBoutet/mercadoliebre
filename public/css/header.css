@@ -1,13 +1,15 @@
-header{
+ header{
     background-color: #EAC926;
 }
 
-.header-top{
-    display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
-    padding: 32px 0;
-}
+.header-tablet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        padding: 32px 0;
+    }
+
 
 .logo{
     width: 45%;
@@ -16,41 +18,58 @@ header{
     position: relative;
 }
 
-.buscar{
+.barra-busqueda{
+    background-color: #ffffff;
     width: 45%;
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    background-color: aliceblue;
-    padding: 10px;
-    border-radius: 8px;
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
 }
 
-.buscar-texto{
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 20px;
+.barra-busqueda form{
     width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
 }
 
-.boton{
-    width: 20px;
-    height: 20px;
-    text-decoration: none;
-    font-size: 19px;
+.barra-busqueda input{
+    border: none;
+    outline: none;
+}
+
+.campo-busqueda{
+    width: 100%;
     display: inline;
-    position: absolute;
-    right: -20px;
 }
 
+.campo-busqueda input{
+    width: 100%
+}
+
+.lupa{
+    justify-self: flex-end;
+    display: inline;
+}
+
+.lupa button{
+    border: none;
+}
+
+.lupa button:hover{
+    cursor: pointer;
+}
 
 
 .compra{
+    width: 100%;
+    padding: 1rem;
     text-align: center;
-    padding-top: 35px;
 }
+
+ .compra div{
+    display: inline;
+} 
 
 a{
     text-decoration: none;
@@ -70,15 +89,13 @@ a{
    border-radius: 7px;
 }
 
-.banner{
-   width: 100vw;
+nav{
+    display: none;
 }
 
- @media (max-width: 361px){
-    .izq-der {
-     display: none;
-    }
-} 
+.banner{
+   width: 100%;
+}
 
 
 @media (min-width: 361px){
@@ -86,39 +103,55 @@ a{
         display: none;
     }
 
-    .header-tablet{
-        display: flex;
-        justify-content: space-between;
-    }
-
     .logo{
-        width: 30%
+        width: 30%;
     }
 
-    .buscar{
-        width: 22%
+    .barra-busqueda{
+        width: 30%;
     }
 
     .compra{
-        max-width: 25%;
-        font-size: small;
+        width: 30%;
+        padding: 0;
+        display: flex;
+        align-items: center;
     }
 
-    .izq-der{
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 24px;
+    }
+
+    .nav-izq-der{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+/*     .izq-der{
         display: flex;
         justify-content: space-between;
     }
 
     .izq-der ul{
         display: flex;
+        padding-bottom: 10px ;
     }
 
     .izq-der li{
         margin: 0px 5px;
     }
 
+    .izq-der i{
+        display: flex;
+        padding-top: 5px;
+    }
 
-/*     .izq{
+    .izq{
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
@@ -134,15 +167,10 @@ a{
         display: flex;
         padding-left: 40px;
         margin-right: 20px;
-    } */
+    } */ 
 }
 
 @media (min-width: 761px){
-    .header-tablet, .izq-der{
-        max-width: 1200px;
-        margin: auto;
-        align-items: center;
-    }
 
     .izq-der{
         margin-top: 40px 
@@ -155,4 +183,4 @@ a{
     .izq-der a{
         font-size: 19px;
     }
-}
+} 

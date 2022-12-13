@@ -16,7 +16,7 @@ main{
 .titulares{
     font-size: 24px;
     width: 100%;
-    margin: 1rem 
+    padding: 16px;
 }
 
 .producto{
@@ -87,15 +87,6 @@ main{
     visibility:visible;
 }
 
-
-/* ========= Movil ========== */
-
-/* @media (max-width: 361px){ */
-    .descripciones{
-        display: none;
-    }
-}
-
 /* =========== Tablet =========== */
 
 @media (min-width: 361px){
@@ -116,6 +107,7 @@ main{
 
 }
 
+/* ============ Desktop ============= */
 
 @media (min-width: 761px){
     .producto{
