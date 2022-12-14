@@ -54,6 +54,7 @@
 
 .lupa button{
     border: none;
+    background-color: white;
 }
 
 .lupa button:hover{
@@ -131,43 +132,6 @@ nav{
         justify-content: space-around;
         text-align: center;
     }
-
-/*     .izq-der{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .izq-der ul{
-        display: flex;
-        padding-bottom: 10px ;
-    }
-
-    .izq-der li{
-        margin: 0px 5px;
-    }
-
-    .izq-der i{
-        display: flex;
-        padding-top: 5px;
-    }
-
-    .izq{
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-    }
-
-    .der{
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
-
-    li{
-        display: flex;
-        padding-left: 40px;
-        margin-right: 20px;
-    } */ 
 }
 
 @media (min-width: 761px){
