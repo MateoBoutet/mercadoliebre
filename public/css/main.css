@@ -29,6 +29,7 @@ main{
 .precios-descuentos{
     display: flex;
     flex-direction: row;
+    padding-top: 15px;
 }
 
 .precios{
@@ -38,6 +39,8 @@ main{
 
 .descuentos{
     color: green;
+    padding-top: 5px;
+    padding-left: 10px;
 }
 
 .descripciones{
@@ -70,7 +73,7 @@ main{
     background-color: #FFF;
     border-radius: 50%;
     position: absolute;    
-    right: 70px;
+    right: 80px;
     top: -15px;
     color: #39b54a;
     transition:
@@ -100,10 +103,10 @@ main{
     }
 
     
-
     .ofertas, .ultima-vista{
         justify-content: space-between;
     }
+
 
 }
 
